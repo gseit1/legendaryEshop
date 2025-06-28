@@ -59,10 +59,10 @@ const filteredProducts = computed(() => {
         <div class="row">
           <div class="col-12 mb-4">
             <div class="d-flex justify-content-between align-items-center">
-              <h3 class="text-white">
+              <h3 class="text-white" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
                 {{ selectedCategory === 'all' ? 'All Products' : selectedCategory }}
               </h3>
-              <span class="text-muted">{{ filteredProducts.length }} items</span>
+              <span class="text-muted" style="color: #ccc !important; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">{{ filteredProducts.length }} items</span>
             </div>
           </div>
         </div>
@@ -104,6 +104,17 @@ const filteredProducts = computed(() => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.9),
+    2px 2px 4px rgba(0, 0, 0, 0.7);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+.shop-hero .lead {
+  color: #e0e0e0;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .filter-section {

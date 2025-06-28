@@ -143,16 +143,31 @@ const handleImageError = () => {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: #fff !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .product-category {
   font-weight: 600;
   letter-spacing: 0.1em;
+  color: #ccc !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+  color: #d0d0d0 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .price {
   font-size: 1.3rem;
   font-weight: 900;
+  color: #fff !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .badge {

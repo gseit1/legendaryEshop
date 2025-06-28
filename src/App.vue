@@ -51,12 +51,30 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.025em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .display-1 {
   font-size: 4rem;
   font-weight: 900;
   letter-spacing: -0.05em;
+  text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.8),
+    1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Enhanced text visibility */
+p, .lead, .text-muted {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-white {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+.text-muted {
+  color: #d0d0d0 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
 }
 
 @media (max-width: 768px) {

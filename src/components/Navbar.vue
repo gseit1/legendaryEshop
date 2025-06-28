@@ -94,6 +94,10 @@ onMounted(() => {
   font-size: 1.5rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #fff !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .nav-link {
@@ -104,6 +108,9 @@ onMounted(() => {
   margin: 0 0.5rem;
   transition: all 0.3s ease;
   position: relative;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav-link::after {
@@ -145,6 +152,9 @@ onMounted(() => {
   .navbar-brand {
     font-size: 1.1rem; /* Smaller brand text on mobile */
     letter-spacing: 0.1em;
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.9),
+      1px 1px 2px rgba(0, 0, 0, 0.7);
   }
   
   .navbar-toggler {

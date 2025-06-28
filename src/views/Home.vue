@@ -91,11 +91,12 @@ onMounted(() => {
             </p>
           </div>
           <div class="col-lg-6">
-            <div class="brand-image-placeholder">
-              <div class="placeholder-content">
-                <i class="bi bi-image display-1"></i>
-                <p class="mt-3">Brand Story Image</p>
-              </div>
+            <div class="brand-image">
+              <img 
+                src="/images/brand-story.png" 
+                alt="Supreme Legendary Brand Story" 
+                class="img-fluid rounded shadow-lg"
+              >
             </div>
           </div>
         </div>
@@ -173,16 +174,25 @@ onMounted(() => {
 
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.1em;
+  color: #ffffff;
   text-shadow: 
-    3px 3px 6px rgba(0, 0, 0, 0.9),
-    1px 1px 3px rgba(0, 0, 0, 0.8),
-    0 0 15px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
+    4px 4px 8px rgba(0, 0, 0, 1),
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 3;
 }
 
 .cta-button {
@@ -233,19 +243,33 @@ onMounted(() => {
   position: relative;
 }
 
-.brand-image-placeholder {
-  height: 400px;
-  background-color: #f8f9fa;
-  border: 2px dashed #dee2e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
+.brand-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-.placeholder-content {
-  color: #6c757d;
+.brand-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.brand-image:hover img {
+  transform: scale(1.05);
+}
+
+.brand-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
+  z-index: 1;
+  border-radius: 15px;
 }
 
 /* Mobile optimizations */

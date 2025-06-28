@@ -277,6 +277,8 @@ const addToCart = () => {
   font-weight: 600;
   letter-spacing: 0.2em;
   font-size: 0.9rem;
+  color: #ccc !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .product-title {
@@ -284,11 +286,37 @@ const addToCart = () => {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: 1.1;
+  color: #fff !important;
+  text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.9),
+    2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .current-price {
-  color: #fff;
+  color: #fff !important;
   font-weight: 900;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.product-details .lead {
+  color: #e0e0e0 !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.product-details p {
+  color: #d0d0d0 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.product-details h5 {
+  color: #fff !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .size-btn {
@@ -329,12 +357,14 @@ const addToCart = () => {
 }
 
 .feature-item {
-  color: #ccc;
+  color: #e0e0e0 !important;
   font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .feature-item i {
   font-size: 1.1rem;
+  color: #fff !important;
 }
 
 .custom-tab {
@@ -371,7 +401,23 @@ const addToCart = () => {
 }
 
 .tab-content {
-  color: #ccc;
+  color: #d0d0d0 !important;
+}
+
+.tab-content h5 {
+  color: #fff !important;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.tab-content li, .tab-content p {
+  color: #d0d0d0 !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.tab-content strong {
+  color: #fff !important;
 }
 
 .size-chart-placeholder {
