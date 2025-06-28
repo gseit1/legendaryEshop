@@ -295,9 +295,12 @@ onMounted(() => {
     padding: 3rem 0;
   }
   
-  .brand-image-placeholder {
-    height: 250px;
+  .brand-image {
     margin-top: 2rem;
+  }
+  
+  .brand-image img {
+    height: 250px;
   }
 }
 
